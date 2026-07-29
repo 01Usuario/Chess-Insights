@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+main, .contenido {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+body#landing {
+    position: relative;
+    background-image: url('./Resources/board.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: clamp(2rem, 10vw, 6rem);
+    text-align: center;
+     color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 2rem); 
+     color: white;
+}
+
+.formulario {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+label{
+     color: white;
+}
+
+.input-container {
+    display: flex;
+    gap: 12px;
+}
+
+input {
+    font-size: 3vh;
+    text-align: center;
+}
+
+button {
+    font-size: 3vh;
+    background-color: #7fa650;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6c8e42;
+}
+body#main_page{
+    box-sizing: border-box;
+    background-color: dimgray;   
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 100vh;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.sidebar a:hover {
+    background-color: #333;
+}
+
+.sidebar a.active {
+    background-color: #7fa650;
+}
