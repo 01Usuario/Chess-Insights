@@ -43,6 +43,17 @@ h2 {
     font-size: clamp(1rem, 3vw, 2rem); 
      color: white;
 }
+h3{
+    color: white;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
 
 .formulario {
     background-color: rgba(0, 0, 0, 0.4);
@@ -113,4 +124,80 @@ body#main_page{
 
 .sidebar a.active {
     background-color: #7fa650;
+}
+.presentation {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    margin-bottom: 30px;
+}
+
+.profile_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.subtitle {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: #bbb;
+    margin-top: -8px;
+}
+
+.general-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+.general-stats h3 {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 4px;
+}
+
+.general-stats p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.stats > div {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stats img {
+    width: 48px;
+    height: 48px;
+}
+
+.stats .rating {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 8px 0 4px;
+}
+
+.stats .record {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+}
+
+.stats .winrate {
+    font-size: 0.9rem;
+    color: #7fa650;
+    margin-top: 4px;
+    font-weight: bold;
 }
