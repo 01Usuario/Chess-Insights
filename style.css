@@ -201,3 +201,78 @@ body#main_page{
     margin-top: 4px;
     font-weight: bold;
 }
+body#historial {
+    background-color: dimgray;
+}
+
+.filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.filtros select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+.tabla-partidas {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla-partidas th,
+.tabla-partidas td {
+    padding: 12px 16px;
+    text-align: center;
+    color: white;
+}
+
+.tabla-partidas thead {
+    background-color: #1e1e1e;
+}
+
+.tabla-partidas tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+.tabla-partidas tbody tr:hover {
+    background-color: #444;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge.win {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.badge.loss {
+    background-color: #c62828;
+    color: white;
+}
+
+.badge.draw {
+    background-color: #757575;
+    color: white;
+}
+
+.revisar {
+    color: #7fa650;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.revisar:hover {
+    text-decoration: underline;
+}

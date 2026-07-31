@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-    <title>Historial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Historial</title>
 </head>
-<body>
-    <nav class="sidebar">
-        <a href="main_page.html">Insights</a>
-        <a href="historial.html" class="active">Historial</a>
-    </nav>
-    
+<body id="historial">
+  <nav class="sidebar">
+    <a href="main_page.html">Insights</a>
+    <a href="historial.html" class="active">Historial</a>
+  </nav>
+
+  <main class="contenido">
+    <h2>Historial de partidas</h2>
+
+    <div class="filtros">
+      <select>
+        <option value="">Modalidad</option>
+        <option value="bullet">Bullet</option>
+        <option value="blitz">Blitz</option>
+        <option value="rapid">Rapid</option>
+        <option value="daily">Daily</option>
+      </select>
+      <select>
+        <option value="">Resultado</option>
+        <option value="win">Victoria</option>
+        <option value="loss">Derrota</option>
+        <option value="draw">Empate</option>
+      </select>
+    </div>
+    <div class="tabla-wrapper"> 
+        <table class="tabla-partidas">
+        <thead>
+            <tr>
+            <th>Fecha</th>
+            <th>Rival</th>
+            <th>Color</th>
+            <th>Modalidad</th>
+            <th>Elo</th>
+            <th>Apertura</th>
+            <th>Resultado</th>
+            <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>28/07/2026</td>
+            <td>rivalUser1</td>
+            <td>Blancas</td>
+            <td>Blitz</td>
+            <td>1502</td>
+            <td>Apertura Italiana</td>
+            <td><span class="badge win">Victoria</span></td>
+            <td><a href="#" class="revisar">Revisar</a></td>
+            </tr>
+            <tr>
+            <td>27/07/2026</td>
+            <td>rivalUser2</td>
+            <td>Negras</td>
+            <td>Rapid</td>
+            <td>1498</td>
+            <td>Defensa Siciliana</td>
+            <td><span class="badge loss">Derrota</span></td>
+            <td><a href="#" class="revisar">Revisar</a></td>
+            </tr>
+            <tr>
+            <td>27/07/2026</td>
+            <td>rivalUser3</td>
+            <td>Blancas</td>
+            <td>Bullet</td>
+            <td>1505</td>
+            <td>Gambito de Dama</td>
+            <td><span class="badge draw">Empate</span></td>
+            <td><a href="#" class="revisar">Revisar</a></td>
+            </tr>
+            <tr>
+            <td>26/07/2026</td>
+            <td>rivalUser4</td>
+            <td>Negras</td>
+            <td>Blitz</td>
+            <td>1490</td>
+            <td>Defensa Francesa</td>
+            <td><span class="badge win">Victoria</span></td>
+            <td><a href="#" class="revisar">Revisar</a></td>
+            </tr>
+            <tr>
+            <td>25/07/2026</td>
+            <td>rivalUser5</td>
+            <td>Blancas</td>
+            <td>Daily</td>
+            <td>1480</td>
+            <td>Apertura Inglesa</td>
+            <td><span class="badge loss">Derrota</span></td>
+            <td><a href="#" class="revisar">Revisar</a></td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
+  </main>
 </body>
 </html>
